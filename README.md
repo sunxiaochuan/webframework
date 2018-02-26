@@ -1,5 +1,5 @@
 # 这是一个自己写的 web 前端构建框架
-## 使用到的包；查看 package.json 文件  
+## 使用到的包请查看 package.json 文件  
 ##  安装项目依赖
 ```
 npm install
