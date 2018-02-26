@@ -1,0 +1,29 @@
+1.BFF：大厂现在都在使用的一个东西 Backend(后端) For FrontEnd(FE 前端)  这个是一线的技术公司必备的一个架构框架   
+还有中间层(这个是必须有的)：PHP Node Proxy  中间层的好处：削减Java、Api、跨域、SSR、路由 等等|
+
+2.做一个基础的前端开发框架需要实现的具体是：前端+后端+(发布出去的)命令行+测试部署(上线环境和开发环境)
+
+3.想写这个一个框架的前提是先去搭建后端，后端搭建好了之后就可以将前端的项目编译过去  
+推荐两个比较好的 BFF 框架：egg(http://eggjs.org/ 阿里团队写的)  thinkjs(https://thinkjs.org/)
+FIS 所实现的就是在项目中依次的创建 app -> home -> index.js  这个时候就可以直接的访问 /home/index 这个路由了
+名词普及：   FRP：函数式响应编程 示例 框架--AX.JS   FP：函数式编程
+如果想要实现的是纯 API 的话可以使用 hapijs(https://hapijs.com/)
+Node 主要是针对于高并发的应用(例如：聊天系统)来用的，其书写逻辑与 PHP 实际上并没有什么区别，只是说用前端用 Node 更加的方便不用再去学习 PHP 那些的语法了
+前端走到现在就是一层消费后端 API 的一个能力，后端走到最后 Node 或者是 PHP 走的是传统意义上的前端和后端之间的中间层,这里还需要考虑是做的什么样的业务如果是纯 web 的话建议去使用 koa2、express
+
+4.使用 gulp 编译 node 代码的具体原因：使用 webpack 编译 node 时会生成一堆恶心的代码 实际上就是他会自己写一个  function require(){} 在浏览器端实现这个方法，但是实际上 node 自己已经支持 require 了 所以这个显得有些多此一举了；使用 gulp 完成这个编译工作已经是足够做到了，而且它即轻又快 所以这里推荐使用 gulp 来编译 node 的代码
+
+小知识：开发环境(本地)需要用到的包 --save-dev     生产环境(上线)需要用到的包 --save
+
+5. webpack 编译起来会比较的慢
+    webpack 是以 JS 为 entry(入口) 的，对于前端开发者来说不是很爽，
+    webpack 学习成本较高，越往后面配置起来越复杂
+    webpack 的 loader 配置也是非常的繁琐
+happypack 可以解决上面的所有问题
+    首先是快  他是先分析成 AST 后面再进行处理，而 webpack 是所有的东西都得先经过 loader 之后再分析成 AST 之后再去进行处理，这样一来他就比 webpack 少了前面这个步骤，再加上他是多核的
+    其次他是基于 html 为 entry 的
+    还有它是 0 配置
+
+    小知识：学到一个名词 tree shaking 意思为树的优化，Tree Shaking 是一个术语,字面的理解就是摇一摇树,树上的枯叶就会掉下来,留下绿叶。可以使用 gulp-better-rollup (https://www.npmjs.com/package/gulp-better-rollup) 它可以替代 babel 只是说他目前没有支持到 gulp-rollup 的清洗能力不然的话这是一个利器
+
+    小知识：如果想要自己创建的文件夹结构比较的专业的话，可以参照这个 Yii (http://www.yiichina.com/doc/guide/2.0)这个脚手架的结构来
