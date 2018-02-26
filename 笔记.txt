@@ -26,4 +26,19 @@ happypack 可以解决上面的所有问题
 
     小知识：学到一个名词 tree shaking 意思为树的优化，Tree Shaking 是一个术语,字面的理解就是摇一摇树,树上的枯叶就会掉下来,留下绿叶。可以使用 gulp-better-rollup (https://www.npmjs.com/package/gulp-better-rollup) 它可以替代 babel 只是说他目前没有支持到 gulp-rollup 的清洗能力不然的话这是一个利器
 
-    小知识：如果想要自己创建的文件夹结构比较的专业的话，可以参照这个 Yii (http://www.yiichina.com/doc/guide/2.0)这个脚手架的结构来
+    小知识：如果想要自己 创建的文件夹结构比较的专业的话，可以参照这个 Yii (http://www.yiichina.com/doc/guide/2.0)这个脚手架的结构来
+
+    小知识：如果是一个类的话建议驼峰命名法 IndexController，常量的话首字母小写即可 localConfig
+
+6.assets和view 是webpack的事情  BFF留了一层架构层让你往里塞
+
+    小知识：将那些需要各种传递的动态方法写成 class 类，静态方法写成 const 类
+7.app.js文件的职责非常的简单纯粹：控制整个系统，所以不要在 app.js 文件中掺杂任何的业务逻辑
+8.现在的前端跟java并驾齐驱，只是说我们现在的写法还是没有用到深层次的像是设计模式之类的东西
+9.在成熟的YII(PHP)框架中你会看到 extends xiaochuan.Controller 这个作者自定义的父类名称 所有的路由方法都是继承自他，这样做的原因是因为：多个类调用起来会相当的麻烦，所以便想出了先将所以的类放到一个文件中全部都给你定义好先，之后谁要用谁就去 new 这样就可以通过 DI(依赖注入) 达到 IOC(控制反转)的作用
+
+小知识：IOC和DI概念
+    IOC（控制反转）：全称为：Inverse of Control。从字面上理解就是控制反转了，将对在自身对象中的一个内置对象的控制反转，反转后不再由自己本身的对象进行控制这个内置对象的创建，而是由第三方系统去控制这个内置对象的创建。
+    DI（依赖注入）：全称为Dependency Injection，意思自身对象中的内置对象是通过注入的方式进行创建。
+    那么IOC和DI这两者又是什么关系呢？
+    IOC就是一种软件设计思想，DI是这种软件设计思想的一个实现。而Spring中的核心机制就是DI。
