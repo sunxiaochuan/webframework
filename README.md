@@ -25,3 +25,4 @@ http://localhost:80
 ```
 #### 整个项目的实现笔记
 -   [BFF 整个完整的 web 前端框架构建（一）](https://www.jianshu.com/p/a829b1da7ed0)
+-   [BFF 整个完整的 web 前端框架构建（二）](https://www.jianshu.com/p/e928ed631313)
