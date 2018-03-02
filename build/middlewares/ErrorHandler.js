@@ -16,7 +16,7 @@ const ErrorHandler = {
             }
         });
         app.use(async (ctx, next) => {
-            await next(); //这里石打个标记还要回来的
+            await next(); //这里是打个标记还要回来的
             if (404 != ctx.status) return;
             ctx.status = 404;
             ctx.body = 404;

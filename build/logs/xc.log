@@ -1,0 +1,87 @@
+[2018-03-01T12:53:55.456] [ERROR] xclog - TypeError: this.testService.get is not a function
+    at TestAPI.getUser (C:\Users\sunxiaochuan\Desktop\webframework\build\controllers\TestController.js:54:47)
+    at memberInvoker (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_awilix-koa@2.1.0@awilix-koa\lib\invokers.js:80:45)
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@4.0.0@koa-compose\index.js:42:32)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@4.0.0@koa-compose\index.js:34:12
+[2018-03-01T12:53:57.528] [ERROR] xclog - TypeError: this.testService.get is not a function
+    at TestAPI.getUser (C:\Users\sunxiaochuan\Desktop\webframework\build\controllers\TestController.js:54:47)
+    at memberInvoker (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_awilix-koa@2.1.0@awilix-koa\lib\invokers.js:80:45)
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@4.0.0@koa-compose\index.js:42:32)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@4.0.0@koa-compose\index.js:34:12
+[2018-03-01T12:59:42.091] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T12:59:51.027] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:00:06.009] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:00:50.037] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:01:49.235] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:04:50.957] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:05:07.474] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:08:05.414] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:08:48.754] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:09:01.267] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:09:04.879] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:09:14.774] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:09:14.847] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:09:21.019] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:09:21.419] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:09:21.617] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:10:11.942] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T13:10:12.434] [ERROR] xclog - ReferenceError: err is not defined
+    at app.use (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\ErrorHandler.js:21:26)
+    at <anonymous>
+[2018-03-01T14:09:35.753] [ERROR] xclog - TypeError: target.next is not a function
+    at target (C:\Users\sunxiaochuan\Desktop\webframework\build\middlewares\xcAauthenticate.js:10:16)
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@4.0.0@koa-compose\index.js:42:32)
+    at C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@4.0.0@koa-compose\index.js:34:12
+    at dispatch (C:\Users\sunxiaochuan\Desktop\webframework\node_modules\_koa-compose@4.0.0@koa-compose\index.js:42:32)

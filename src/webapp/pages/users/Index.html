@@ -1,0 +1,15 @@
+{% extends './common/layout.html' %}
+{% block title %}首页测试页面{% endblock %}
+{% block head %}
+<meta name="keywords" content="众易贷,河南P2P,网贷平台,投资理财,互联网理财,投资项目,短期理财,银行理财,理财产品,P2P理财,小额理财,小额投资,个人理财,如何理财,怎样理财">
+<meta name="description" content="众易贷(官网:www.hizyd.com),为三农和中小微企业提供便利的投融资服务。为用户提供低风险高收益的投资理财项目信息,大众化的投资门槛、全免费的服务体验。">
+{% parent %}
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+{% endblock %}
+{% block content %}
+{% include '../widgets/top/top.html' %}
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

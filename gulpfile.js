@@ -14,7 +14,8 @@ gulp.task('builddev', () => {
             .pipe(babel({
                 babelrc: false,//这个可以不使用全局的 .babelrc 配置文件 然后在下面自定义需要的配置
                 'plugins': [
-                    'transform-es2015-modules-commonjs'//https://www.npmjs.com/package/babel-plugin-transform-es2015-modules-commonjs
+                    'transform-es2015-modules-commonjs',//https://www.npmjs.com/package/babel-plugin-transform-es2015-modules-commonjs
+                    'transform-decorators-legacy'//转换装饰器的包 https://www.npmjs.com/package/babel-plugin-transform-decorators-legacy
                 ]
             }))
             .pipe(gulp.dest('./build/'))//文件编译后储存的目录
@@ -24,24 +25,25 @@ gulp.task('builddev', () => {
 
 //上线版本的 task
 //babel + rollup 流清理
-
 //清洗 nodeuii 目录中其他的 js 文件
-gulp.task('buildother', () => {
+gulp.task('buildprod', () => {
     gulp.src('./src/nodeuii/**/*.js')//需要编译的文件
         .pipe(babel({
             babelrc: false,//这个可以不使用全局的 .babelrc 配置文件 然后在下面自定义需要的配置
-            'ignore': ['./src/nodeuii/app.js'],//排除启动文件使其只在下面的 rollup 中进行编译避免重复编译所产生的问题
+            ignore: './src/nodeuii/config/dev.js',//排除配置文件
             'plugins': [
-                'transform-es2015-modules-commonjs'//https://www.npmjs.com/package/babel-plugin-transform-es2015-modules-commonjs
+                'transform-es2015-modules-commonjs',//https://www.npmjs.com/package/babel-plugin-transform-es2015-modules-commonjs
+                'transform-decorators-legacy'//转换装饰器的包 https://www.npmjs.com/package/babel-plugin-transform-decorators-legacy
             ]
         }))
         .pipe(gulp.dest('./build/'))//文件编译后储存的目录
-});
-//单独清洗 nodeuii 目录中的 app.js 文件
-gulp.task('buildapp', () =>
+}
+);
+//单独清洗 nodeuii 目录中的 dev.js 文件
+gulp.task('buildconfig', () =>
     gulp.src('./src/nodeuii/**/*.js')//需要编译的文件
         .pipe(rollup({
-            input: ['./src/nodeuii/app.js'],//需要清洗的文件
+            input: ['./src/nodeuii/config/dev.js'],//需要清洗的文件
             format: 'cjs',
             'plugins': [
                 replace({//这里是将 env 进程不是 procuction 便会自动不执行了
@@ -54,8 +56,8 @@ gulp.task('buildapp', () =>
 
 //创建一个接收任务字符串的变量
 let _task = ['builddev'];
-if(process.env.NODE_ENV == 'procuction'){//判断进程中使用的是 dev 还是 prod   执行相应的任务
-    _task = ['buildother','buildapp'];
+if (process.env.NODE_ENV == 'procuction') {//判断进程中使用的是 dev 还是 prod   执行相应的任务
+    _task = ['buildconfig', 'buildprod'];
 }
 
 //这个执行一个默认就会执行的 task

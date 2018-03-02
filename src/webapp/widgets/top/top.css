@@ -1,0 +1,8 @@
+:root{
+    --mainColor:yellow;
+}
+.widgets-top{
+    background: var(--mainColor);
+    /* 开始书写 bem css */
+    
+}
